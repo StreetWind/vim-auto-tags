@@ -62,7 +62,7 @@ endif
 "                   for plugn run quickly, but even"
 "                   you config err, we can also find it"
 if !exists('g:auto_update_cscope_ctags_backup_run_py_name_cache')
-        let g:auto_update_cscope_ctags_backup_run_py_name_cache = '~/.vim/bundle/auto_update_cscope_ctags_database/plugin/auto_update_cscope_ctags_backup_run.py'
+        let g:auto_update_cscope_ctags_backup_run_py_name_cache = '~/.vim/plugged/auto_update_cscope_ctags_database/plugin/auto_update_cscope_ctags_backup_run.py'
 endif
 
 "g:auto_run_function_when_cscope_connect"
