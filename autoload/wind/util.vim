@@ -1,5 +1,5 @@
 " save 'cpo'设置脚本兼容模式为vim
-let s:cpo_save = &cpo
+let s:save_cpo = &cpo
 set cpo&vim
 
 "util.vim version
@@ -10,7 +10,7 @@ let g:wind#util#version =0.1
 "------------------------------------------------------
 
 "check vim cscope or Python3 (检查vim支持cscope和Python3不)
-if ( !has('cscope') || !has('python3') )
+if ( !has('cscope') || !has('python') )
   finish
 endif
 
