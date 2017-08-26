@@ -166,7 +166,9 @@ function s:Cycle_csdb()
     "if readbuffer is python file && at the new dir can not find
     "databse we will try to load old databse, caused by we need
     "use old database when in python lib file
-    let newcsdbpath = s:Find_in_parent("cscope.out",s:windowdir(),$HOME)
+    
+    let newcsdbpath = s:Find_in_parent("cscope.out",wind#util#windowdir(),$HOME)
+    "let newcsdbpath = s:Find_in_parent("cscope.out",s:windowdir(),$HOME)
     if newcsdbpath != "Nothing"
 	    let g:for_auto_update_cscope_ctag = newcsdbpath
     elseif 0 == g:python_file
